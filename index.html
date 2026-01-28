@@ -6,59 +6,49 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-body {
-  margin:0;
-  font-family: Arial, sans-serif;
-  background:#f4f4f4;
-  color:#333;
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#f2f2f2;
+color:#333;
+line-height:1.6;
 }
-
-header {
-  background:#000;
-  color:#fff;
-  padding:50px 20px;
-  text-align:center;
+header{
+background:#111;
+color:#fff;
+padding:60px 20px;
+text-align:center;
 }
-
-section {
-  background:#fff;
-  max-width:1100px;
-  margin:30px auto;
-  padding:40px 20px;
+section{
+background:#fff;
+max-width:1150px;
+margin:30px auto;
+padding:40px 25px;
 }
-
-h2 {
-  text-align:center;
-  margin-bottom:20px;
+h2{text-align:center;}
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
 }
-
-.products {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:20px;
+.box{
+border:1px solid #ddd;
+padding:25px;
 }
-
-.card {
-  border:1px solid #ddd;
-  padding:20px;
-  text-align:center;
+.button{
+display:inline-block;
+background:#000;
+color:#fff;
+padding:15px 30px;
+text-decoration:none;
+border-radius:4px;
+margin-top:20px;
 }
-
-.button {
-  display:inline-block;
-  background:#000;
-  color:#fff;
-  padding:14px 25px;
-  text-decoration:none;
-  margin-top:15px;
-  border-radius:5px;
-}
-
-footer {
-  background:#000;
-  color:#fff;
-  text-align:center;
-  padding:30px 20px;
+footer{
+background:#000;
+color:#fff;
+text-align:center;
+padding:30px;
 }
 </style>
 </head>
@@ -67,84 +57,99 @@ footer {
 
 <header>
 <h1>HN Clothing</h1>
-<p>Premium Men’s Unstitched Fabrics</p>
+<p><strong>Premium Men’s Unstitched Fabrics</strong></p>
 <p>Cotton • Wash & Wear • Khaddar • Boski</p>
 <a class="button" href="https://wa.me/923156256747">Order on WhatsApp</a>
 </header>
 
 <section>
-<h2>About HN Clothing</h2>
+<h2>Who We Are</h2>
 <p>
-HN Clothing is a trusted name in premium men’s unstitched fabrics.
-We provide high-quality materials suitable for all seasons and occasions.
-Our goal is to deliver comfort, durability, and style all over Pakistan.
+HN Clothing is a professional men’s fabric brand committed to providing
+high-quality unstitched fabrics across Pakistan. We carefully select our
+materials to ensure comfort, durability, and a premium look for every customer.
+</p>
+<p>
+Whether for daily wear, office use, or special occasions, our fabrics are
+designed to suit all seasons and lifestyles.
 </p>
 <p><strong>Owner:</strong> Hashaam Naich</p>
 </section>
 
 <section>
-<h2>Our Products</h2>
+<h2>Our Product Range</h2>
 
-<div class="products">
+<div class="grid">
 
-<div class="card">
+<div class="box">
 <h3>Cotton Fabric</h3>
-<p>Soft, breathable, ideal for summer wear.</p>
+<p>
+Our cotton fabrics are soft, breathable, and skin-friendly.
+Ideal for summer and daily wear, providing comfort throughout the day.
+</p>
 </div>
 
-<div class="card">
+<div class="box">
 <h3>Wash & Wear</h3>
-<p>Easy maintenance, wrinkle-free daily fabric.</p>
+<p>
+Wrinkle-resistant and easy to maintain.
+Perfect for office wear and regular use with a clean, sharp look.
+</p>
 </div>
 
-<div class="card">
+<div class="box">
 <h3>Khaddar</h3>
-<p>Warm and comfortable winter fabric.</p>
+<p>
+Warm, durable fabric specially selected for winter seasons,
+offering both comfort and long-lasting quality.
+</p>
 </div>
 
-<div class="card">
+<div class="box">
 <h3>Boski</h3>
-<p>Premium smooth fabric for formal occasions.</p>
+<p>
+Premium smooth fabric for formal and special occasions,
+giving an elegant and classy appearance.
+</p>
 </div>
 
 </div>
 
 <p style="text-align:center;margin-top:20px;">
-Available in all colors • Suitable for all seasons
+Available in multiple colors • Suitable for all seasons
 </p>
 </section>
 
 <section>
-<h2>Why Choose Us?</h2>
+<h2>Why Choose HN Clothing?</h2>
 <ul>
-<li>Premium quality fabrics</li>
-<li>Affordable prices</li>
-<li>All Pakistan delivery</li>
-<li>Cash on Delivery available</li>
-<li>Trusted & honest service</li>
+<li>Premium quality unstitched fabrics</li>
+<li>Carefully selected materials</li>
+<li>Suitable for all seasons</li>
+<li>Affordable and competitive pricing</li>
+<li>Cash on Delivery available across Pakistan</li>
+<li>Reliable customer support via WhatsApp & Call</li>
 </ul>
 </section>
 
 <section>
-<h2>Contact & Order</h2>
+<h2>Order & Contact Information</h2>
 <p style="text-align:center;">
 <strong>Call / WhatsApp:</strong><br>
 0315-6256747
 </p>
-
 <p style="text-align:center;">
-<strong>Cash on Delivery Available All Over Pakistan</strong>
+<strong>Cash on Delivery Available Nationwide</strong>
 </p>
-
 <div style="text-align:center;">
-<a class="button" href="https://wa.me/923156256747">Place Order Now</a>
+<a class="button" href="https://wa.me/923156256747">Place Your Order</a>
 </div>
 </section>
 
 <footer>
 <p>HN Clothing © 2026</p>
 <p>Owner: Hashaam Naich</p>
-<p>Quality You Can Trust</p>
+<p>Professional Men’s Fabric Brand</p>
 </footer>
 
 </body>
