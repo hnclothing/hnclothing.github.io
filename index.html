@@ -3,101 +3,112 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HN Clothing – Premium Fabrics & Perfumes</title>
+<title>HN Clothing | Fabrics & Perfumes</title>
 
 <style>
 body{
 margin:0;
 font-family:Segoe UI,Arial,sans-serif;
-background:#ffffff;
-color:#2c2c2c;
-line-height:1.9;
+background:#fafafa;
+color:#333;
+line-height:1.8;
 }
 
-/* COLORS */
+/* COLOR THEME */
 :root{
 --gold:#d4af37;
---lightgold:#f7f2df;
+--dark:#1f2933;
+--cream:#fdf9ef;
+--green:#2f7d6d;
+--blue:#1f3f66;
+}
+
+/* COMMON */
+section{
+padding:120px 25px;
+max-width:1400px;
+margin:auto;
+}
+
+h1,h2,h3{
+margin-bottom:20px;
+}
+
+h2{
+font-size:42px;
+text-align:center;
+color:var(--blue);
+}
+
+p{
+font-size:18px;
+max-width:1000px;
+margin:auto;
 }
 
 /* HEADER */
 header{
-background:linear-gradient(to bottom,var(--lightgold),#ffffff);
-padding:180px 20px;
+background:linear-gradient(135deg,var(--cream),#ffffff);
+padding:200px 25px;
 text-align:center;
 }
 
 header h1{
-font-size:55px;
+font-size:60px;
 color:var(--gold);
-letter-spacing:3px;
-margin-bottom:15px;
+letter-spacing:4px;
 }
 
 header p{
-font-size:19px;
-max-width:900px;
-margin:auto;
+font-size:20px;
+margin-top:20px;
 }
 
 .btn{
 display:inline-block;
-margin-top:40px;
+margin-top:45px;
 padding:18px 45px;
-background:var(--gold);
+background:var(--green);
 color:#fff;
 text-decoration:none;
 border-radius:40px;
 font-weight:bold;
 }
 
-/* SECTIONS */
-section{
-max-width:1400px;
-margin:140px auto;
-padding:80px 25px;
-}
-
-h2{
-text-align:center;
-font-size:42px;
-color:var(--gold);
-margin-bottom:70px;
-}
-
-/* IMAGE FULL */
+/* FULL IMAGE */
 .full img{
 width:100%;
-border-radius:20px;
+border-radius:25px;
 }
 
-/* PRODUCTS */
-.products{
+/* GRID */
+.grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:45px;
+margin-top:80px;
 }
 
-.product{
-background:#ffffff;
-border-radius:18px;
+.card{
+background:#fff;
+border-radius:20px;
 padding:25px;
 text-align:center;
 box-shadow:0 15px 40px rgba(0,0,0,0.08);
 }
 
-.product img{
+.card img{
 width:100%;
 height:300px;
 object-fit:cover;
 border-radius:15px;
 }
 
+/* PRICE */
 .old{
 text-decoration:line-through;
-color:#888;
+color:#999;
 }
-
 .new{
 color:var(--gold);
 font-size:24px;
@@ -106,89 +117,94 @@ font-weight:bold;
 
 /* RAMZAN */
 .ramzan{
-background:var(--lightgold);
+background:linear-gradient(to bottom,#eef5f2,#ffffff);
 border-radius:30px;
-padding:150px 30px;
 text-align:center;
 }
 
 .ramzan img{
 width:100%;
-max-width:550px;
-border-radius:20px;
+max-width:600px;
+border-radius:25px;
 margin-bottom:50px;
 }
 
 /* FOOTER */
 footer{
-background:var(--gold);
+background:var(--dark);
 color:#fff;
 text-align:center;
-padding:100px 20px;
+padding:120px 25px;
 }
 </style>
 </head>
 
 <body>
 
+<!-- HERO -->
 <header>
 <h1>HN Clothing</h1>
 <p>
-Premium Men’s Unstitched Fabrics & Exclusive Perfumes  
-<br>Cash on Delivery Available All Over Pakistan
+Premium Men’s Unstitched Fabrics & Original Perfumes<br>
+Cash on Delivery All Over Pakistan
 </p>
 <a class="btn" href="https://wa.me/923704517520">Order on WhatsApp</a>
 </header>
 
+<!-- BRAND IMAGE -->
 <section class="full">
-<img src="https://images.unsplash.com/photo-1616627983194-8f9f2c7eecb1">
+<img src="https://images.unsplash.com/photo-1600180758890-6b94519a8ba6">
 </section>
 
+<!-- ABOUT -->
 <section>
-<h2>About HN Clothing</h2>
-<p style="max-width:1000px;margin:auto;font-size:19px;">
-HN Clothing aik premium Pakistani brand hai jo sirf **high-quality unstitched fabrics**
-aur **original perfumes** provide karta hai.  
+<h2>About Our Brand</h2>
+<p>
+HN Clothing ek trusted Pakistani brand hai jo sirf **high-quality unstitched fabrics**
+aur **original long-lasting perfumes** provide karta hai.
 <br><br>
 <strong>Owners:</strong> Hashaam Naich & Muhammad Bilal  
-<br>
-Hamara maqsad customers ko quality, trust aur behtareen service dena hai.
+<br><br>
+Hamara maqsad quality, honesty aur customer satisfaction hai.
 </p>
 </section>
 
+<!-- RAMZAN -->
 <section class="ramzan">
-<img src="https://images.unsplash.com/photo-1605470207062-b72b2b6c69b5">
+<img src="https://images.unsplash.com/photo-1589187155472-efb7f45b7c91">
 <h2>🌙 Ramzan Sharif Special Discount</h2>
-<p style="max-width:1000px;margin:auto;font-size:19px;">
-Ramzan Sharif rehmat, barkat aur maghfirat ka mahina hai.  
-Is mubarak mahine ki khushi main HN Clothing laa raha hai  
-<strong>30% Special Ramzan Discount</strong> taake har ghar tak quality aur khushi pohanch sake.
+<p>
+Ramzan Sharif rehmat aur barkat ka mahina hai.
+Is mubarak mahine ki khushi main HN Clothing pesh kar raha hai
+<strong>30% Special Ramzan Discount</strong>
+taake har ghar tak quality aur asaani pohanch sake.
 </p>
 </section>
 
+<!-- FABRICS -->
 <section>
 <h2>Men’s Unstitched Fabrics</h2>
-<div class="products">
+<div class="grid">
 
-<div class="product">
+<div class="card">
 <img src="https://images.unsplash.com/photo-1582719478181-d9b5a4f4d0b1">
 <h3>Cotton Fabric</h3>
 <p><span class="old">Rs 3000</span> → <span class="new">Rs 1750</span></p>
 </div>
 
-<div class="product">
+<div class="card">
 <img src="https://images.unsplash.com/photo-1593032465171-8f92e4baf5c8">
 <h3>Boski Fabric</h3>
 <p><span class="old">Rs 3000</span> → <span class="new">Rs 1750</span></p>
 </div>
 
-<div class="product">
+<div class="card">
 <img src="https://images.unsplash.com/photo-1589785447117-7f8c5c25c0c1">
 <h3>Wash & Wear</h3>
 <p><span class="old">Rs 3000</span> → <span class="new">Rs 1750</span></p>
 </div>
 
-<div class="product">
+<div class="card">
 <img src="https://images.unsplash.com/photo-1603252109303-2751441dd157">
 <h3>Khaddar Fabric</h3>
 <p><span class="old">Rs 3000</span> → <span class="new">Rs 1750</span></p>
@@ -197,29 +213,30 @@ Is mubarak mahine ki khushi main HN Clothing laa raha hai
 </div>
 </section>
 
-<section>
+<!-- PERFUMES -->
+<section style="background:#f8f8f8;">
 <h2>Perfumes Collection</h2>
-<div class="products">
+<div class="grid">
 
-<div class="product">
+<div class="card">
 <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f">
 <h3>Premium Perfume</h3>
 <p><span class="old">Rs 1000</span> → <span class="new">Rs 700</span></p>
 </div>
 
-<div class="product">
+<div class="card">
 <img src="https://images.unsplash.com/photo-1615634260167-c8cdede054de">
 <h3>Luxury Perfume</h3>
 <p><span class="old">Rs 1000</span> → <span class="new">Rs 700</span></p>
 </div>
 
-<div class="product">
+<div class="card">
 <img src="https://images.unsplash.com/photo-1619995745882-f4128ac82ad6">
 <h3>Classic Fragrance</h3>
 <p><span class="old">Rs 1000</span> → <span class="new">Rs 700</span></p>
 </div>
 
-<div class="product">
+<div class="card">
 <img src="https://images.unsplash.com/photo-1595425970377-c9703cf48b6d">
 <h3>Royal Scent</h3>
 <p><span class="old">Rs 1000</span> → <span class="new">Rs 700</span></p>
@@ -228,11 +245,19 @@ Is mubarak mahine ki khushi main HN Clothing laa raha hai
 </div>
 </section>
 
+<!-- CONTACT -->
+<section>
+<h2>Order & Contact</h2>
+<p>
+WhatsApp / Call: <strong>0370-4517520</strong><br>
+Cash on Delivery Available Nationwide
+</p>
+</section>
+
 <footer>
 <p><strong>HN Clothing</strong></p>
 <p>Owners: Hashaam Naich & Muhammad Bilal</p>
-<p>WhatsApp / Call: 0370-4517520</p>
-<p>Cash on Delivery Available</p>
+<p>© 2026 All Rights Reserved</p>
 </footer>
 
 </body>
