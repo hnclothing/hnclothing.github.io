@@ -3,86 +3,99 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HN Clothing – Premium Fabrics & Perfumes</title>
+<title>HN Clothing – Fabrics & Perfumes</title>
 
 <style>
 body{
 margin:0;
-font-family:Arial, sans-serif;
-background:#f9f9f9;
+font-family:Segoe UI,Arial,sans-serif;
+background:#fdfdfd;
 color:#333;
-line-height:1.8;
+line-height:1.9;
 }
 
+/* HEADER */
 header{
-background:#ffffff;
-padding:90px 20px;
+background:linear-gradient(to right,#f7f9fc,#eef2f7);
 text-align:center;
-border-bottom:1px solid #ddd;
+padding:120px 20px;
 }
 
 header h1{
-font-size:42px;
-color:#2f6b4f;
-margin-bottom:10px;
+font-size:44px;
+color:#1f4f5f;
+margin-bottom:15px;
 }
 
 header p{
 font-size:18px;
-max-width:800px;
+max-width:850px;
 margin:auto;
 }
 
 .btn{
 display:inline-block;
-background:#2f6b4f;
+background:#1f7a5c;
 color:white;
-padding:14px 35px;
+padding:15px 38px;
 border-radius:30px;
 text-decoration:none;
-margin-top:25px;
+margin-top:30px;
 font-weight:600;
 }
 
+/* SECTIONS */
 section{
-max-width:1200px;
-margin:60px auto;
-padding:60px 25px;
-background:white;
-border-radius:8px;
+max-width:1250px;
+margin:80px auto;
+padding:70px 25px;
 }
 
 h2{
 text-align:center;
-color:#2f6b4f;
-font-size:32px;
-margin-bottom:35px;
+font-size:34px;
+color:#1f4f5f;
+margin-bottom:45px;
 }
 
+/* ABOUT */
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:10px;
+}
+
+/* PRODUCTS */
 .products{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-gap:25px;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
 }
 
 .product{
-border:1px solid #e0e0e0;
+background:#ffffff;
+border:1px solid #e5e5e5;
 padding:20px;
-border-radius:6px;
+border-radius:8px;
 text-align:center;
-background:#fafafa;
 }
 
 .product img{
 width:100%;
-height:230px;
+height:240px;
 object-fit:cover;
-border-radius:6px;
+border-radius:8px;
 }
 
 .price{
-margin:10px 0;
-font-size:17px;
+margin:12px 0;
+font-size:18px;
 }
 
 .old{
@@ -96,19 +109,39 @@ font-size:22px;
 font-weight:bold;
 }
 
+/* RAMZAN */
 .ramzan{
-background:#f0f7f3;
-border-left:6px solid #2f6b4f;
-padding:30px;
-margin:40px 0;
-border-radius:6px;
+background:#f6f9f6;
+border-radius:12px;
+padding:80px 30px;
+text-align:center;
 }
 
+.ramzan img{
+max-width:300px;
+margin-bottom:25px;
+}
+
+/* WHY US */
+.why{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:25px;
+}
+
+.box{
+background:#f9fafb;
+padding:30px;
+border-radius:8px;
+text-align:center;
+}
+
+/* FOOTER */
 footer{
-background:#2f6b4f;
+background:#1f4f5f;
 color:white;
 text-align:center;
-padding:50px 20px;
+padding:60px 20px;
 }
 </style>
 </head>
@@ -127,21 +160,30 @@ Cash on Delivery Available All Over Pakistan
 
 <section>
 <h2>About HN Clothing</h2>
+<div class="about">
+<div>
 <p>
-HN Clothing ek trusted Pakistani brand hai jo premium men’s unstitched fabrics aur quality perfumes provide karta hai.
-Hum quality, affordability aur customer satisfaction par poora focus rakhte hain.
+HN Clothing ek premium Pakistani brand hai jo men’s unstitched fabrics aur high-quality perfumes provide karta hai.
+Hum quality, comfort aur reasonable pricing ko hamesha priority dete hain.
 </p>
-<p><strong>Owners:</strong> Hashaam Naich & Muhammad Bilal</p>
+<p>
+<strong>Owners:</strong> Hashaam Naich & Muhammad Bilal
+</p>
+</div>
+<img src="https://images.unsplash.com/photo-1617137968427-85924c800a22">
+</div>
 </section>
 
 <section class="ramzan">
-<h2>🌙 Ramzan Sharif Special Offer</h2>
+<img src="https://images.unsplash.com/photo-1582614645123-0c1c7d0e59c9">
+<h2>🌙 Ramzan Sharif Mubarak</h2>
 <p>
-Ramzan Sharif ke barkat walay maheenay ki khushi main HN Clothing apne customers ke liye
-<strong>30% SPECIAL DISCOUNT</strong> offer kar raha hai.
+Ramzan Sharif barkat, rehmat aur maghfirat ka maheena hai.
+Is mubarak maheene ki khushi main HN Clothing apne qeemti customers ke liye
+<strong>30% Special Ramzan Discount</strong> offer kar raha hai.
 </p>
 <p>
-Ye offer sirf Ramzan Sharif tak valid hai — behtareen quality products ab aur bhi kam qeemat par.
+Behtareen quality fabrics aur perfumes ab pehle se zyada munasib qeemat par.
 </p>
 </section>
 
@@ -193,7 +235,7 @@ Ye offer sirf Ramzan Sharif tak valid hai — behtareen quality products ab aur 
 
 <div class="product">
 <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908">
-<h3>Classic Scent</h3>
+<h3>Classic Perfume</h3>
 <p class="price"><span class="old">Rs 1000</span> → <span class="new">Rs 700</span></p>
 <a class="btn" href="https://wa.me/923704517520">Order</a>
 </div>
@@ -207,7 +249,7 @@ Ye offer sirf Ramzan Sharif tak valid hai — behtareen quality products ab aur 
 
 <div class="product">
 <img src="https://images.unsplash.com/photo-1585386959984-a41552231693">
-<h3>Premium Perfume</h3>
+<h3>Premium Scent</h3>
 <p class="price"><span class="old">Rs 1000</span> → <span class="new">Rs 700</span></p>
 <a class="btn" href="https://wa.me/923704517520">Order</a>
 </div>
@@ -215,12 +257,7 @@ Ye offer sirf Ramzan Sharif tak valid hai — behtareen quality products ab aur 
 </div>
 </section>
 
-<footer>
-<p><strong>HN Clothing</strong></p>
-<p>Owners: Hashaam Naich & Muhammad Bilal</p>
-<p>WhatsApp / Call: 0370-4517520</p>
-<p>Cash on Delivery Available</p>
-</footer>
-
-</body>
-</html>
+<section>
+<h2>Why Choose HN Clothing</h2>
+<div class="why">
+<div class="box">Premium Quality
