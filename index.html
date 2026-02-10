@@ -8,117 +8,123 @@
 <style>
 body{
 margin:0;
-font-family:Arial,Segoe UI,sans-serif;
-background:#fbfaf6;
-color:#2b2b2b;
+font-family:Segoe UI,Arial,sans-serif;
+background:#ffffff;
+color:#2c2c2c;
 line-height:1.9;
+}
+
+/* COLORS */
+:root{
+--gold:#d4af37;
+--lightgold:#f7f2df;
 }
 
 /* HEADER */
 header{
-background:#ffffff;
-padding:150px 20px;
+background:linear-gradient(to bottom,var(--lightgold),#ffffff);
+padding:180px 20px;
 text-align:center;
 }
 
 header h1{
-font-size:50px;
-color:#1f3f66;
-letter-spacing:2px;
-margin-bottom:10px;
+font-size:55px;
+color:var(--gold);
+letter-spacing:3px;
+margin-bottom:15px;
 }
 
 header p{
-font-size:18px;
+font-size:19px;
 max-width:900px;
 margin:auto;
 }
 
 .btn{
 display:inline-block;
-background:#2f7d6d;
+margin-top:40px;
+padding:18px 45px;
+background:var(--gold);
 color:#fff;
-padding:16px 40px;
-border-radius:30px;
 text-decoration:none;
-margin-top:35px;
+border-radius:40px;
 font-weight:bold;
 }
 
-/* SECTION */
+/* SECTIONS */
 section{
-max-width:1300px;
-margin:110px auto;
+max-width:1400px;
+margin:140px auto;
 padding:80px 25px;
 }
 
 h2{
 text-align:center;
-font-size:38px;
-color:#1f3f66;
-margin-bottom:60px;
+font-size:42px;
+color:var(--gold);
+margin-bottom:70px;
 }
 
 /* IMAGE FULL */
 .full img{
 width:100%;
-border-radius:16px;
+border-radius:20px;
 }
 
 /* PRODUCTS */
 .products{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:40px;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:45px;
 }
 
 .product{
-background:#fff;
-border-radius:12px;
+background:#ffffff;
+border-radius:18px;
 padding:25px;
 text-align:center;
-box-shadow:0 10px 30px rgba(0,0,0,0.06);
+box-shadow:0 15px 40px rgba(0,0,0,0.08);
 }
 
 .product img{
 width:100%;
-height:260px;
+height:300px;
 object-fit:cover;
-border-radius:10px;
+border-radius:15px;
 }
 
 .old{
 text-decoration:line-through;
-color:#999;
+color:#888;
 }
 
 .new{
-color:#c59b2d;
-font-size:22px;
+color:var(--gold);
+font-size:24px;
 font-weight:bold;
 }
 
 /* RAMZAN */
 .ramzan{
-background:#f1f6f4;
-border-radius:20px;
-padding:120px 30px;
+background:var(--lightgold);
+border-radius:30px;
+padding:150px 30px;
 text-align:center;
 }
 
 .ramzan img{
 width:100%;
-max-width:520px;
-border-radius:16px;
-margin-bottom:40px;
+max-width:550px;
+border-radius:20px;
+margin-bottom:50px;
 }
 
 /* FOOTER */
 footer{
-background:#1f3f66;
+background:var(--gold);
 color:#fff;
 text-align:center;
-padding:80px 20px;
+padding:100px 20px;
 }
 </style>
 </head>
@@ -128,7 +134,7 @@ padding:80px 20px;
 <header>
 <h1>HN Clothing</h1>
 <p>
-Premium Men’s Unstitched Fabrics & Quality Perfumes  
+Premium Men’s Unstitched Fabrics & Exclusive Perfumes  
 <br>Cash on Delivery Available All Over Pakistan
 </p>
 <a class="btn" href="https://wa.me/923704517520">Order on WhatsApp</a>
@@ -139,22 +145,24 @@ Premium Men’s Unstitched Fabrics & Quality Perfumes
 </section>
 
 <section>
-<h2>About Our Brand</h2>
-<p style="max-width:900px;margin:auto;font-size:18px;">
-HN Clothing ek premium Pakistani brand hai jo sirf **high-quality unstitched fabrics**
-aur **original perfumes** offer karta hai.
+<h2>About HN Clothing</h2>
+<p style="max-width:1000px;margin:auto;font-size:19px;">
+HN Clothing aik premium Pakistani brand hai jo sirf **high-quality unstitched fabrics**
+aur **original perfumes** provide karta hai.  
 <br><br>
-<strong>Owners:</strong> Hashaam Naich & Muhammad Bilal
+<strong>Owners:</strong> Hashaam Naich & Muhammad Bilal  
+<br>
+Hamara maqsad customers ko quality, trust aur behtareen service dena hai.
 </p>
 </section>
 
 <section class="ramzan">
 <img src="https://images.unsplash.com/photo-1605470207062-b72b2b6c69b5">
-<h2>🌙 Ramzan Sharif Special Offer</h2>
-<p style="max-width:900px;margin:auto;font-size:18px;">
-Ramzan Sharif rehmat, barkat aur maghfirat ka mahina hai.
-Is mubarak mauqay par HN Clothing apne customers ke liye
-<strong>30% Special Ramzan Discount</strong> pesh kar raha hai.
+<h2>🌙 Ramzan Sharif Special Discount</h2>
+<p style="max-width:1000px;margin:auto;font-size:19px;">
+Ramzan Sharif rehmat, barkat aur maghfirat ka mahina hai.  
+Is mubarak mahine ki khushi main HN Clothing laa raha hai  
+<strong>30% Special Ramzan Discount</strong> taake har ghar tak quality aur khushi pohanch sake.
 </p>
 </section>
 
@@ -171,6 +179,18 @@ Is mubarak mauqay par HN Clothing apne customers ke liye
 <div class="product">
 <img src="https://images.unsplash.com/photo-1593032465171-8f92e4baf5c8">
 <h3>Boski Fabric</h3>
+<p><span class="old">Rs 3000</span> → <span class="new">Rs 1750</span></p>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1589785447117-7f8c5c25c0c1">
+<h3>Wash & Wear</h3>
+<p><span class="old">Rs 3000</span> → <span class="new">Rs 1750</span></p>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1603252109303-2751441dd157">
+<h3>Khaddar Fabric</h3>
 <p><span class="old">Rs 3000</span> → <span class="new">Rs 1750</span></p>
 </div>
 
@@ -193,13 +213,25 @@ Is mubarak mauqay par HN Clothing apne customers ke liye
 <p><span class="old">Rs 1000</span> → <span class="new">Rs 700</span></p>
 </div>
 
+<div class="product">
+<img src="https://images.unsplash.com/photo-1619995745882-f4128ac82ad6">
+<h3>Classic Fragrance</h3>
+<p><span class="old">Rs 1000</span> → <span class="new">Rs 700</span></p>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1595425970377-c9703cf48b6d">
+<h3>Royal Scent</h3>
+<p><span class="old">Rs 1000</span> → <span class="new">Rs 700</span></p>
+</div>
+
 </div>
 </section>
 
 <footer>
 <p><strong>HN Clothing</strong></p>
 <p>Owners: Hashaam Naich & Muhammad Bilal</p>
-<p>WhatsApp: 0370-4517520</p>
+<p>WhatsApp / Call: 0370-4517520</p>
 <p>Cash on Delivery Available</p>
 </footer>
 
