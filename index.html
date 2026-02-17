@@ -2,13 +2,21 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>HN Clothing | Premium Men Fabrics</title>
+<title>HN Clothing | Premium Men Fabrics & Perfumes</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="HN Clothing – Premium men unstitched fabrics in Pakistan. Cotton, Wash & Wear, Khaddar with Ramzan Sharif discounts. Cash on Delivery available.">
+<meta name="description" content="HN Clothing – Premium Men Unstitched Fabrics & Perfumes in Pakistan. Wash & Wear, Cotton, Khaddar, Boski, Latha & Perfumes. Ramzan Sharif Discounts. Cash on Delivery Available.">
 
 <style>
+:root{
+--black:#0e0e0e;
+--gold:#c9a24d;
+--grey:#f4f4f4;
+--darkgrey:#777;
+}
+
 *{box-sizing:border-box}
+
 body{
 margin:0;
 font-family:Arial,Helvetica,sans-serif;
@@ -18,9 +26,9 @@ color:#222;
 
 /* HEADER */
 header{
-background:#0d0d0d;
+background:var(--black);
 color:#fff;
-padding:20px 60px;
+padding:22px 70px;
 display:flex;
 justify-content:space-between;
 align-items:center;
@@ -28,12 +36,12 @@ flex-wrap:wrap;
 }
 header h1{
 margin:0;
-color:#c9a24d;
+color:var(--gold);
 letter-spacing:3px;
 }
 nav a{
 color:#fff;
-margin-left:22px;
+margin-left:26px;
 text-decoration:none;
 font-weight:bold;
 }
@@ -42,7 +50,7 @@ font-weight:bold;
 .hero{
 background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
 url('https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17') center/cover no-repeat;
-height:90vh;
+height:85vh;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -51,7 +59,7 @@ color:#fff;
 padding:20px;
 }
 .hero h2{
-font-size:52px;
+font-size:50px;
 margin-bottom:15px;
 }
 .hero p{
@@ -59,56 +67,58 @@ font-size:22px;
 margin-bottom:30px;
 }
 .btn{
-background:#c9a24d;
+background:var(--gold);
 color:#000;
-padding:15px 36px;
+padding:15px 38px;
 text-decoration:none;
 font-weight:bold;
-border-radius:5px;
+border-radius:4px;
 display:inline-block;
 }
 
 /* SECTIONS */
 section{
-padding:90px 60px;
+padding:100px 70px;
 }
 .section-title{
 text-align:center;
-font-size:38px;
-margin-bottom:20px;
+font-size:40px;
+margin-bottom:25px;
 }
 .section-desc{
 text-align:center;
 max-width:900px;
-margin:0 auto 60px;
+margin:0 auto 70px;
 line-height:1.9;
 color:#444;
+font-size:18px;
 }
 
 /* PRODUCT GRID */
-.products{
+.grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:35px;
+gap:40px;
 }
-.product{
+.card{
 border:1px solid #e0e0e0;
 border-radius:10px;
-padding:30px;
+padding:35px;
 text-align:center;
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
-transition:0.3s;
+box-shadow:0 12px 30px rgba(0,0,0,0.08);
+transition:.3s;
 cursor:pointer;
+background:#fff;
 }
-.product:hover{
+.card:hover{
 transform:translateY(-6px);
 }
-.product h3{
+.card h3{
 margin-top:0;
-font-size:24px;
+font-size:26px;
 }
 .price{
-color:#c9a24d;
+color:var(--gold);
 font-size:22px;
 font-weight:bold;
 }
@@ -118,41 +128,38 @@ color:#999;
 font-size:16px;
 margin-right:8px;
 }
+.discount{
+color:#c0392b;
+font-weight:bold;
+margin-top:5px;
+}
 
-/* PRODUCT DETAIL */
-#cotton-detail{
+/* DETAIL SECTIONS */
+.detail{
 display:none;
-background:#f7f7f7;
+background:var(--grey);
 }
 .detail-box{
 max-width:1100px;
 margin:auto;
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:50px;
-align-items:center;
-}
-.detail-box img{
-width:100%;
-border-radius:12px;
 }
 .detail-box h2{
-font-size:36px;
+font-size:38px;
 margin-top:0;
 }
 .detail-box ul{
 line-height:2;
-font-size:17px;
+font-size:18px;
 }
-.order-box{
-margin-top:25px;
+.order{
+margin-top:30px;
 }
-.order-box a{
-background:#c9a24d;
-padding:14px 34px;
-text-decoration:none;
-font-weight:bold;
+.order a{
+background:var(--gold);
 color:#000;
+padding:15px 40px;
+font-weight:bold;
+text-decoration:none;
 border-radius:5px;
 display:inline-block;
 }
@@ -163,35 +170,33 @@ background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
 url('ramzan-bg.jpeg') center/cover no-repeat;
 color:#fff;
 text-align:center;
-padding:140px 40px;
+padding:150px 40px;
 }
 .ramzan h2{
-font-size:46px;
+font-size:48px;
 }
 .ramzan h3{
-color:#c9a24d;
+color:var(--gold);
 font-size:32px;
 }
 
 /* FOOTER */
 footer{
-background:#0d0d0d;
+background:var(--black);
 color:#ccc;
 text-align:center;
-padding:50px 20px;
+padding:55px 20px;
 }
 footer h3{
-color:#c9a24d;
+color:var(--gold);
+margin-bottom:15px;
 }
 
-@media(max-width:900px){
-.detail-box{
-grid-template-columns:1fr;
-text-align:center;
-}
-.hero h2{
-font-size:40px;
-}
+/* MOBILE */
+@media(max-width:800px){
+header{padding:20px}
+section{padding:80px 25px}
+.hero h2{font-size:38px}
 }
 </style>
 </head>
@@ -201,7 +206,8 @@ font-size:40px;
 <header>
 <h1>HN CLOTHING</h1>
 <nav>
-<a href="#products">Fabrics</a>
+<a href="#fabrics">Fabrics</a>
+<a href="#perfumes">Perfumes</a>
 <a href="#ramzan">Ramzan</a>
 <a href="#contact">Contact</a>
 </nav>
@@ -210,67 +216,176 @@ font-size:40px;
 <div class="hero">
 <div>
 <h2>Premium Men Unstitched Fabrics</h2>
-<p>Luxury • Comfort • Trust</p>
+<p>Luxury • Quality • Trust</p>
 <a class="btn" href="https://wa.me/923704517520">Order on WhatsApp</a>
 </div>
 </div>
 
-<section id="products">
-<h2 class="section-title">Our Fabric Collection</h2>
-<p class="section-desc">
-High-quality Pakistani fabrics designed for comfort, durability & elegance.
-</p>
+<!-- FABRICS -->
+<section id="fabrics">
+<h2 class="section-title">Fabric Collection</h2>
+<p class="section-desc">High-quality fabrics designed for Pakistani lifestyle.</p>
 
-<div class="products">
-
-<div class="product" onclick="openCotton()">
-<h3>Cotton Fabric</h3>
+<div class="grid">
+<div class="card" onclick="openDetail('cotton')">
+<h3>Cotton</h3>
 <p><span class="old">Rs 3000</span> <span class="price">Rs 2400</span></p>
-<p>Click to view details</p>
+<p class="discount">Ramzan 20% OFF</p>
 </div>
 
-<div class="product">
+<div class="card" onclick="openDetail('wash')">
 <h3>Wash & Wear</h3>
 <p><span class="old">Rs 3000</span> <span class="price">Rs 2400</span></p>
+<p class="discount">Ramzan 20% OFF</p>
 </div>
 
-<div class="product">
+<div class="card" onclick="openDetail('khaddar')">
 <h3>Khaddar</h3>
 <p><span class="old">Rs 3000</span> <span class="price">Rs 2400</span></p>
+<p class="discount">Ramzan 20% OFF</p>
 </div>
 
+<div class="card" onclick="openDetail('boski')">
+<h3>Boski</h3>
+<p><span class="old">Rs 10000</span> <span class="price">Rs 8000</span></p>
+<p class="discount">Ramzan 20% OFF</p>
+</div>
+
+<div class="card" onclick="openDetail('latha')">
+<h3>Latha</h3>
+<p><span class="old">Rs 6000</span> <span class="price">Rs 4800</span></p>
+<p class="discount">Ramzan 20% OFF</p>
+</div>
+
+<div class="card" onclick="openDetail('blended')">
+<h3>Blended Fabric</h3>
+<p><span class="old">Rs 8000</span> <span class="price">Rs 6400</span></p>
+<p class="discount">Ramzan 20% OFF</p>
+</div>
 </div>
 </section>
 
-<section id="cotton-detail">
+<!-- DETAILS -->
+<section id="cotton" class="detail">
 <div class="detail-box">
-<img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf" alt="Cotton Fabric">
-<div>
-<h2>Premium Cotton Fabric</h2>
-<p>
-Hamara cotton fabric specially Pakistan ke weather ko mad-e-nazr rakh kar select kiya gaya hai.
-</p>
+<h2>Cotton Fabric</h2>
 <ul>
-<li>✔ 100% breathable cotton</li>
-<li>✔ Summer special & skin-friendly</li>
-<li>✔ Soft finishing & premium fall</li>
-<li>✔ Easy stitching & long lasting</li>
-<li>✔ Cash on Delivery available</li>
+<li>100% breathable cotton</li>
+<li>Summer special & skin friendly</li>
+<li>Soft finish & premium fall</li>
+<li>Easy stitching</li>
+<li>Cash on Delivery available</li>
 </ul>
-
-<div class="order-box">
-<p class="price"><span class="old">Rs 3000</span> Rs 2400</p>
-<a href="https://wa.me/923704517520?text=Assalamualaikum%20mujhe%20Cotton%20Fabric%20order%20karna%20hai">Order Cotton on WhatsApp</a>
+<div class="order">
+<a href="https://wa.me/923704517520?text=I%20want%20to%20order%20Cotton%20Fabric">Order Cotton</a>
 </div>
+</div>
+</section>
+
+<section id="wash" class="detail">
+<div class="detail-box">
+<h2>Wash & Wear</h2>
+<ul>
+<li>Wrinkle resistant</li>
+<li>Daily & office use</li>
+<li>All season fabric</li>
+<li>Long lasting quality</li>
+<li>Cash on Delivery available</li>
+</ul>
+<div class="order">
+<a href="https://wa.me/923704517520?text=I%20want%20to%20order%20Wash%20and%20Wear">Order Wash & Wear</a>
+</div>
+</div>
+</section>
+
+<section id="khaddar" class="detail">
+<div class="detail-box">
+<h2>Khaddar</h2>
+<ul>
+<li>Winter premium fabric</li>
+<li>Strong & durable</li>
+<li>Traditional Pakistani look</li>
+<li>Warm & comfortable</li>
+<li>Cash on Delivery available</li>
+</ul>
+<div class="order">
+<a href="https://wa.me/923704517520?text=I%20want%20to%20order%20Khaddar">Order Khaddar</a>
+</div>
+</div>
+</section>
+
+<section id="boski" class="detail">
+<div class="detail-box">
+<h2>Boski</h2>
+<ul>
+<li>Luxury unstitched fabric</li>
+<li>Soft & shiny texture</li>
+<li>Formal wear</li>
+<li>Premium feel</li>
+<li>Cash on Delivery available</li>
+</ul>
+<div class="order">
+<a href="https://wa.me/923704517520?text=I%20want%20to%20order%20Boski">Order Boski</a>
+</div>
+</div>
+</section>
+
+<section id="latha" class="detail">
+<div class="detail-box">
+<h2>Latha</h2>
+<ul>
+<li>Classic daily wear</li>
+<li>Strong cotton blend</li>
+<li>Easy maintenance</li>
+<li>Long lasting</li>
+<li>Cash on Delivery available</li>
+</ul>
+<div class="order">
+<a href="https://wa.me/923704517520?text=I%20want%20to%20order%20Latha">Order Latha</a>
+</div>
+</div>
+</section>
+
+<section id="blended" class="detail">
+<div class="detail-box">
+<h2>Blended Fabric</h2>
+<ul>
+<li>Cotton & wash blend</li>
+<li>Smooth texture</li>
+<li>Durable quality</li>
+<li>Modern look</li>
+<li>Cash on Delivery available</li>
+</ul>
+<div class="order">
+<a href="https://wa.me/923704517520?text=I%20want%20to%20order%20Blended%20Fabric">Order Blended</a>
+</div>
+</div>
+</section>
+
+<!-- PERFUMES -->
+<section id="perfumes">
+<h2 class="section-title">Perfume Collection</h2>
+<p class="section-desc">Long lasting premium fragrances.</p>
+
+<div class="grid">
+<div class="card">
+<h3>Royal Oud</h3>
+<p class="price">Rs 1200</p>
+</div>
+<div class="card">
+<h3>Musk Gold</h3>
+<p class="price">Rs 1200</p>
+</div>
+<div class="card">
+<h3>Amber Night</h3>
+<p class="price">Rs 1200</p>
 </div>
 </div>
 </section>
 
 <section id="ramzan" class="ramzan">
 <h2>Ramzan Sharif Mubarak</h2>
-<p>
-Is barkat walay mahine mein HN Clothing apne customers ke liye khaas offers pesh kar raha hai.
-</p>
+<p>Is barkat walay mahine mein HN Clothing apne customers ke liye khaas offers pesh kar raha hai.</p>
 <h3>Flat 20% Discount + Cash on Delivery</h3>
 </section>
 
@@ -283,9 +398,10 @@ Is barkat walay mahine mein HN Clothing apne customers ke liye khaas offers pesh
 </footer>
 
 <script>
-function openCotton(){
-document.getElementById("cotton-detail").style.display="block";
-window.location.href="#cotton-detail";
+function openDetail(id){
+document.querySelectorAll('.detail').forEach(d=>d.style.display='none');
+document.getElementById(id).style.display='block';
+location.href='#'+id;
 }
 </script>
 
