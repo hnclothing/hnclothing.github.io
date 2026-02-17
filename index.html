@@ -1,101 +1,409 @@
 <!DOCTYPE html>
-<html lang="ur">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bilal Marth 7 – Premium Men's Fashion | Hashaam Naich</title>
-    <meta name="description" content="Hashaam Naich کا Bilal Marth 7 – اعلیٰ معیار کے مردانہ کپڑے، خوشبو، والٹس اور فیشن مجموعہ۔">
-    <style>
-        body {font-family: 'Arial', sans-serif; margin:0; padding:0; background:#f8f8f8; color:#333;}
-        header {background:#222; color:#fff; padding:20px 0; text-align:center;}
-        header h1 {margin:0; font-size:2em;}
-        header p {margin:5px 0 0 0; font-size:1em;}
-        nav ul {list-style:none; padding:0; margin:10px 0 0 0; display:flex; justify-content:center;}
-        nav ul li {margin:0 15px;}
-        nav ul li a {color:#fff; text-decoration:none; font-weight:bold;}
-        #hero {background:#444 url('images/hero-bg.jpg') no-repeat center center/cover; color:#fff; text-align:center; padding:100px 20px;}
-        #hero h2 {font-size:2.5em; margin:0 0 20px 0;}
-        #hero p {font-size:1.2em; margin-bottom:20px;}
-        .btn {display:inline-block; padding:10px 20px; background:#e91e63; color:#fff; text-decoration:none; border-radius:5px;}
-        #products {padding:50px 20px; text-align:center;}
-        #products h2 {margin-bottom:40px;}
-        .product-list {display:flex; flex-wrap:wrap; justify-content:center; gap:20px;}
-        .product-card {background:#fff; padding:20px; border-radius:10px; width:250px; box-shadow:0 0 10px rgba(0,0,0,0.1);}
-        .product-card img {width:100%; border-radius:10px;}
-        .product-card h3 {margin:15px 0 10px 0;}
-        .product-card p {margin:5px 0;}
-        .product-card .btn.small {padding:5px 10px; font-size:0.9em;}
-        #about, #contact {padding:50px 20px; text-align:center;}
-        footer {background:#222; color:#fff; padding:20px 0; text-align:center; margin-top:40px;}
-        @media(max-width:768px){
-            .product-list {flex-direction:column; align-items:center;}
-        }
-    </style>
+<meta charset="UTF-8">
+<title>HN Clothing | Premium Men Fabrics & Perfumes</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="HN Clothing – Premium Men Unstitched Fabrics & Perfumes in Pakistan. Wash & Wear, Cotton, Khaddar, Boski, Latha & Perfumes. Ramzan Sharif Discounts. Cash on Delivery Available.">
+
+<style>
+:root{
+--black:#0e0e0e;
+--gold:#c9a24d;
+--grey:#f4f4f4;
+--darkgrey:#777;
+}
+
+*{box-sizing:border-box}
+
+body{
+margin:0;
+font-family:Arial,Helvetica,sans-serif;
+background:#fff;
+color:#222;
+}
+
+/* HEADER */
+header{
+background:var(--black);
+color:#fff;
+padding:22px 70px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+header h1{
+margin:0;
+color:var(--gold);
+letter-spacing:3px;
+}
+nav a{
+color:#fff;
+margin-left:26px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* HERO */
+.hero{
+background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+url('https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17') center/cover no-repeat;
+height:85vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:#fff;
+padding:20px;
+}
+.hero h2{
+font-size:50px;
+margin-bottom:15px;
+}
+.hero p{
+font-size:22px;
+margin-bottom:30px;
+}
+.btn{
+background:var(--gold);
+color:#000;
+padding:15px 38px;
+text-decoration:none;
+font-weight:bold;
+border-radius:4px;
+display:inline-block;
+}
+
+/* SECTIONS */
+section{
+padding:100px 70px;
+}
+.section-title{
+text-align:center;
+font-size:40px;
+margin-bottom:25px;
+}
+.section-desc{
+text-align:center;
+max-width:900px;
+margin:0 auto 70px;
+line-height:1.9;
+color:#444;
+font-size:18px;
+}
+
+/* PRODUCT GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:40px;
+}
+.card{
+border:1px solid #e0e0e0;
+border-radius:10px;
+padding:35px;
+text-align:center;
+box-shadow:0 12px 30px rgba(0,0,0,0.08);
+transition:.3s;
+cursor:pointer;
+background:#fff;
+}
+.card:hover{
+transform:translateY(-6px);
+}
+.card h3{
+margin-top:0;
+font-size:26px;
+}
+.price{
+color:var(--gold);
+font-size:22px;
+font-weight:bold;
+}
+.old{
+text-decoration:line-through;
+color:#999;
+font-size:16px;
+margin-right:8px;
+}
+.discount{
+color:#c0392b;
+font-weight:bold;
+margin-top:5px;
+}
+
+/* DETAIL SECTIONS */
+.detail{
+display:none;
+background:var(--grey);
+}
+.detail-box{
+max-width:1100px;
+margin:auto;
+}
+.detail-box h2{
+font-size:38px;
+margin-top:0;
+}
+.detail-box ul{
+line-height:2;
+font-size:18px;
+}
+.order{
+margin-top:30px;
+}
+.order a{
+background:var(--gold);
+color:#000;
+padding:15px 40px;
+font-weight:bold;
+text-decoration:none;
+border-radius:5px;
+display:inline-block;
+}
+
+/* RAMZAN */
+.ramzan{
+background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
+url('ramzan-bg.jpeg') center/cover no-repeat;
+color:#fff;
+text-align:center;
+padding:150px 40px;
+}
+.ramzan h2{
+font-size:48px;
+}
+.ramzan h3{
+color:var(--gold);
+font-size:32px;
+}
+
+/* FOOTER */
+footer{
+background:var(--black);
+color:#ccc;
+text-align:center;
+padding:55px 20px;
+}
+footer h3{
+color:var(--gold);
+margin-bottom:15px;
+}
+
+/* MOBILE */
+@media(max-width:800px){
+header{padding:20px}
+section{padding:80px 25px}
+.hero h2{font-size:38px}
+}
+</style>
 </head>
+
 <body>
 
 <header>
-    <h1>Bilal Marth 7</h1>
-    <p>پریمیم مردانہ فیشن – مالک: <strong>Hashaam Naich</strong></p>
-    <nav>
-        <ul>
-            <li><a href="#products">پرڈکٹس</a></li>
-            <li><a href="#about">ہمارے بارے میں</a></li>
-            <li><a href="#contact">رابطہ</a></li>
-        </ul>
-    </nav>
+<h1>HN CLOTHING</h1>
+<nav>
+<a href="#fabrics">Fabrics</a>
+<a href="#perfumes">Perfumes</a>
+<a href="#ramzan">Ramzan</a>
+<a href="#contact">Contact</a>
+</nav>
 </header>
 
-<section id="hero">
-    <h2>خوش آمدید!</h2>
-    <p>منتخب مردانہ کپڑے، خوشبو، والٹس اور اعلیٰ معیار کے فیشن مجموعہ</p>
-    <a href="#products" class="btn">ابھی دیکھیں</a>
+<div class="hero">
+<div>
+<h2>Premium Men Unstitched Fabrics</h2>
+<p>Luxury • Quality • Trust</p>
+<a class="btn" href="https://wa.me/923704517520">Order on WhatsApp</a>
+</div>
+</div>
+
+<!-- FABRICS -->
+<section id="fabrics">
+<h2 class="section-title">Fabric Collection</h2>
+<p class="section-desc">High-quality fabrics designed for Pakistani lifestyle.</p>
+
+<div class="grid">
+<div class="card" onclick="openDetail('cotton')">
+<h3>Cotton</h3>
+<p><span class="old">Rs 3000</span> <span class="price">Rs 2400</span></p>
+<p class="discount">Ramzan 20% OFF</p>
+</div>
+
+<div class="card" onclick="openDetail('wash')">
+<h3>Wash & Wear</h3>
+<p><span class="old">Rs 3000</span> <span class="price">Rs 2400</span></p>
+<p class="discount">Ramzan 20% OFF</p>
+</div>
+
+<div class="card" onclick="openDetail('khaddar')">
+<h3>Khaddar</h3>
+<p><span class="old">Rs 3000</span> <span class="price">Rs 2400</span></p>
+<p class="discount">Ramzan 20% OFF</p>
+</div>
+
+<div class="card" onclick="openDetail('boski')">
+<h3>Boski</h3>
+<p><span class="old">Rs 10000</span> <span class="price">Rs 8000</span></p>
+<p class="discount">Ramzan 20% OFF</p>
+</div>
+
+<div class="card" onclick="openDetail('latha')">
+<h3>Latha</h3>
+<p><span class="old">Rs 6000</span> <span class="price">Rs 4800</span></p>
+<p class="discount">Ramzan 20% OFF</p>
+</div>
+
+<div class="card" onclick="openDetail('blended')">
+<h3>Blended Fabric</h3>
+<p><span class="old">Rs 8000</span> <span class="price">Rs 6400</span></p>
+<p class="discount">Ramzan 20% OFF</p>
+</div>
+</div>
 </section>
 
-<section id="products">
-    <h2>مقبول پرڈکٹس</h2>
-    <div class="product-list">
-        <div class="product-card">
-            <img src="images/khaddar1.jpg" alt="Khaddar Collection">
-            <h3>Khaddar Classic</h3>
-            <p>Rs 7,499</p>
-            <a href="#" class="btn small">خریدیں</a>
-        </div>
-        <div class="product-card">
-            <img src="images/washingwear1.jpg" alt="Washing Wear Collection">
-            <h3>Washing Wear Premium</h3>
-            <p>Rs 5,999</p>
-            <a href="#" class="btn small">خریدیں</a>
-        </div>
-        <div class="product-card">
-            <img src="images/perfume1.jpg" alt="Perfume Collection">
-            <h3>Signature Perfume</h3>
-            <p>Rs 3,499</p>
-            <a href="#" class="btn small">خریدیں</a>
-        </div>
-        <div class="product-card">
-            <img src="images/wallet1.jpg" alt="Premium Wallet">
-            <h3>Leather Wallet</h3>
-            <p>Rs 2,299</p>
-            <a href="#" class="btn small">خریدیں</a>
-        </div>
-    </div>
+<!-- DETAILS -->
+<section id="cotton" class="detail">
+<div class="detail-box">
+<h2>Cotton Fabric</h2>
+<ul>
+<li>100% breathable cotton</li>
+<li>Summer special & skin friendly</li>
+<li>Soft finish & premium fall</li>
+<li>Easy stitching</li>
+<li>Cash on Delivery available</li>
+</ul>
+<div class="order">
+<a href="https://wa.me/923704517520?text=I%20want%20to%20order%20Cotton%20Fabric">Order Cotton</a>
+</div>
+</div>
 </section>
 
-<section id="about">
-    <h2>ہمارے بارے میں</h2>
-    <p>Bilal Marth 7 ایک معروف مردانہ فیشن برانڈ ہے جس کے مالک <strong>Hashaam Naich</strong> ہیں۔ ہم اعلیٰ معیار کے کپڑے، خوشبو اور والٹس فراہم کرتے ہیں جو ہر مرد کی شخصیت کو اجاگر کریں۔</p>
+<section id="wash" class="detail">
+<div class="detail-box">
+<h2>Wash & Wear</h2>
+<ul>
+<li>Wrinkle resistant</li>
+<li>Daily & office use</li>
+<li>All season fabric</li>
+<li>Long lasting quality</li>
+<li>Cash on Delivery available</li>
+</ul>
+<div class="order">
+<a href="https://wa.me/923704517520?text=I%20want%20to%20order%20Wash%20and%20Wear">Order Wash & Wear</a>
+</div>
+</div>
 </section>
 
-<section id="contact">
-    <h2>رابطہ کریں</h2>
-    <p>فون: +92 325 0123455</p>
-    <p>ای‑میل: support@bilalmarth7.pk</p>
+<section id="khaddar" class="detail">
+<div class="detail-box">
+<h2>Khaddar</h2>
+<ul>
+<li>Winter premium fabric</li>
+<li>Strong & durable</li>
+<li>Traditional Pakistani look</li>
+<li>Warm & comfortable</li>
+<li>Cash on Delivery available</li>
+</ul>
+<div class="order">
+<a href="https://wa.me/923704517520?text=I%20want%20to%20order%20Khaddar">Order Khaddar</a>
+</div>
+</div>
 </section>
 
-<footer>
-    <p>© 2026 Bilal Marth 7 | مالک: Hashaam Naich | All Rights Reserved</p>
+<section id="boski" class="detail">
+<div class="detail-box">
+<h2>Boski</h2>
+<ul>
+<li>Luxury unstitched fabric</li>
+<li>Soft & shiny texture</li>
+<li>Formal wear</li>
+<li>Premium feel</li>
+<li>Cash on Delivery available</li>
+</ul>
+<div class="order">
+<a href="https://wa.me/923704517520?text=I%20want%20to%20order%20Boski">Order Boski</a>
+</div>
+</div>
+</section>
+
+<section id="latha" class="detail">
+<div class="detail-box">
+<h2>Latha</h2>
+<ul>
+<li>Classic daily wear</li>
+<li>Strong cotton blend</li>
+<li>Easy maintenance</li>
+<li>Long lasting</li>
+<li>Cash on Delivery available</li>
+</ul>
+<div class="order">
+<a href="https://wa.me/923704517520?text=I%20want%20to%20order%20Latha">Order Latha</a>
+</div>
+</div>
+</section>
+
+<section id="blended" class="detail">
+<div class="detail-box">
+<h2>Blended Fabric</h2>
+<ul>
+<li>Cotton & wash blend</li>
+<li>Smooth texture</li>
+<li>Durable quality</li>
+<li>Modern look</li>
+<li>Cash on Delivery available</li>
+</ul>
+<div class="order">
+<a href="https://wa.me/923704517520?text=I%20want%20to%20order%20Blended%20Fabric">Order Blended</a>
+</div>
+</div>
+</section>
+
+<!-- PERFUMES -->
+<section id="perfumes">
+<h2 class="section-title">Perfume Collection</h2>
+<p class="section-desc">Long lasting premium fragrances.</p>
+
+<div class="grid">
+<div class="card">
+<h3>Royal Oud</h3>
+<p class="price">Rs 1200</p>
+</div>
+<div class="card">
+<h3>Musk Gold</h3>
+<p class="price">Rs 1200</p>
+</div>
+<div class="card">
+<h3>Amber Night</h3>
+<p class="price">Rs 1200</p>
+</div>
+</div>
+</section>
+
+<section id="ramzan" class="ramzan">
+<h2>Ramzan Sharif Mubarak</h2>
+<p>Is barkat walay mahine mein HN Clothing apne customers ke liye khaas offers pesh kar raha hai.</p>
+<h3>Flat 20% Discount + Cash on Delivery</h3>
+</section>
+
+<footer id="contact">
+<h3>HN Clothing</h3>
+<p>Owners: Hashaam Naich & Muhammad Bilal</p>
+<p>WhatsApp: +92 370 4517520</p>
+<p>Nationwide Delivery | Cash on Delivery</p>
+<p>© 2026 HN Clothing</p>
 </footer>
+
+<script>
+function openDetail(id){
+document.querySelectorAll('.detail').forEach(d=>d.style.display='none');
+document.getElementById(id).style.display='block';
+location.href='#'+id;
+}
+</script>
 
 </body>
 </html>
